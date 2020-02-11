@@ -30,7 +30,7 @@ services:
     #        - INFLUXDB_ADMIN_PASSWORD=${INFLUXDB_PASSWORD}
 
     #    networks:
-            - data_network
+    #        - data_network
 
 networks:
     data_network:
