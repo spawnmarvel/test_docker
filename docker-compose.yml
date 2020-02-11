@@ -37,5 +37,5 @@ networks:
 
 volumes:
   portainer_data:
-  influxdb-storage:
+  # influxdb-storage:
     
