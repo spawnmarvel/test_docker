@@ -18,7 +18,7 @@ services:
             - portainer_data:/data
     influxdb:
         image: influxdb:1.7.9
-        # restart: always
+        restart: always
         ports:
             - '8086:8086'
         volumes:
