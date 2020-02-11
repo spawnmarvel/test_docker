@@ -1,6 +1,6 @@
-# Project Title
+# Project testing docker-compose
 
-One Paragraph of project description goes here
+Need to test docker and docker-compose with Python, Portainer and more
 
 ## Getting Started
 
