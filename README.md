@@ -35,6 +35,13 @@ docker system prune
 docker image ls
 docker rmi image
 ```
+Git ubuntu
+
+```
+git add -u, for all files
+git commit -m "my text"
+git push -u origin master
+```
 
 
 
