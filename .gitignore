@@ -1,0 +1,6 @@
+*.pyc
+*__pyc
+*logs
+*.conf
+*.igl
+*.txt
