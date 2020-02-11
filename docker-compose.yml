@@ -16,26 +16,26 @@ services:
         volumes:
             - /var/run/docker.sock:/var/run/docker.sock
             - portainer_data:/data
-    #influxdb:
-    #    image: influxdb:1.7.9
-    #    restart: always
-    #    ports:
-    #        - '8086:8086'
-    #    volumes:
-    #        - influxdb-storage:/var/lib/influxdb
-    #        - ./influx_init.iql:/docker-entrypoint-initdb.d/influx_init.iql/
-    #    environment:
-    #        - INFLUXDB_DB=influxDB
-    #        - INFLUXDB_ADMIN_USER=${INFLUXDB_USERNAME}
-    #        - INFLUXDB_ADMIN_PASSWORD=${INFLUXDB_PASSWORD}
+    influxdb:
+        image: influxdb:1.7.9
+        restart: always
+        ports:
+            - '8086:8086'
+        volumes:
+            - influxdb-storage:/var/lib/influxdb
+            - ./influx_init.iql:/docker-entrypoint-initdb.d/influx_init.iql/
+        environment:
+            - INFLUXDB_DB=influxDB
+            - INFLUXDB_ADMIN_USER=${INFLUXDB_USERNAME}
+            - INFLUXDB_ADMIN_PASSWORD=${INFLUXDB_PASSWORD}
 
-    #    networks:
-    #        - data_network
+        networks:
+            - data_network
 
 networks:
     data_network:
 
 volumes:
   portainer_data:
-  # influxdb-storage:
+  influxdb-storage:
     

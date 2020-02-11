@@ -24,7 +24,7 @@ if __name__ == "__main__":
     work = True
     try:
         while work:
-            logging.info("loop " + str(count))
+            logging.info("loop a bit more " + str(count))
             time.sleep(5)
             count += 1
     except CustomShutDownExceptions as ex:
