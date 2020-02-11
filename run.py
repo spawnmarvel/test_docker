@@ -14,6 +14,7 @@ def handler_stop_signals(signum, frame):
     logger.info("Starting to stop, throw exception to main for clean up")
     raise CustomShutDownExceptions("SIGTERM")
 
+# docker stop sends SIGTERM
 signal.signal(signal.SIGTERM, handler_stop_signals) # (SIGTERM): terminate the process in a soft way
 
 
