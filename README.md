@@ -19,14 +19,21 @@ In foreground mode (the default when -d is not specified), docker run can start 
 -t              : Allocate a pseudo-tty
 https://docs.docker.com/engine/reference/run/#foreground
 
+Docker:
 ```
 docker run -t test_docker_python-test
+```
+Docker-compose:
+```
+sudo docker-compose up/down
 ```
 
 https://stackoverflow.com/questions/53221412/why-the-none-image-appears-in-docker-and-how-can-we-avoid-it
 
 ```
 docker system prune
+docker image ls
+docker rmi image
 ```
 
 
